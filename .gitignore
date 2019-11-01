@@ -8,7 +8,9 @@
 /vendor
 /public/dist
 /public/app
+/public/admin
 /public/site
+/public/images
 /public/build
 /public/mix-manifest.json
 .env
