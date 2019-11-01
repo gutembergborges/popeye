@@ -1,32 +1,8 @@
-<!doctype html>
-<html lang="en">
-
-  <head>
-    <title>Kiddy &mdash; Website Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
-    
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
+@extends('base')
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-    
+
     <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
@@ -49,14 +25,14 @@
             </div>
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               <div class="d-flex site-info align-items-center mr-5">
-                <span class="block-icon mr-3"><span class="icon-map-marker text-yellow"></span></span>
+                <span class="block-icon mr-3"><i class="fas fa-map-marker-alt text-yellow"></i></span>
                 <span>34 Street Name, City Name Here, <br> United States</span>
               </div>
               <div class="d-flex site-info align-items-center">
-                <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
+                <span class="block-icon mr-3"><i class="far fa-clock"></i></span>
                 <span>Sunday - Friday 8:00AM - 4:00PM <br> Saturday CLOSED</span>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -66,7 +42,7 @@
           <div class="menu-wrap d-flex align-items-center">
             <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
 
-              
+
 
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
@@ -80,19 +56,19 @@
               </nav>
 
               <div class="top-social ml-auto">
-                <a href="#"><span class="icon-facebook text-teal"></span></a>
-                <a href="#"><span class="icon-twitter text-success"></span></a>
-                <a href="#"><span class="icon-linkedin text-yellow"></span></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram text-danger"></i></a>
+                <a href="#"><i class="fab fa-whatsapp text-success"></i></a>
               </div>
           </div>
         </div>
 
-       
+
 
       </header>
 
     <div class="ftco-blocks-cover-1">
-       
+
       <div class="site-section-cover overlay">
         <div class="container">
           <div class="row align-items-center ">
@@ -104,7 +80,7 @@
             </div>
             <div class="col-md-6 ml-auto align-self-end">
               <img src="images/kid_transparent.png" alt="Image" class="img-fluid">
-              
+
             </div>
           </div>
         </div>
@@ -117,7 +93,7 @@
           <div class="col-lg-4">
             <div class="block-2 red">
               <span class="wrap-icon">
-                <span class="icon-home"></span>
+                <span class="fas fa-home"></span>
               </span>
               <h2>Indoor Games</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id culpa.</p>
@@ -126,7 +102,7 @@
           <div class="col-lg-4">
             <div class="block-2 yellow">
               <span class="wrap-icon">
-                <span class="icon-person"></span>
+                <span class="fas fa-user"></span>
               </span>
               <h2>Outdoor Game And Event</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id culpa.</p>
@@ -135,7 +111,7 @@
           <div class="col-lg-4">
             <div class="block-2 teal">
               <span class="wrap-icon">
-                <span class="icon-cog"></span>
+                <span class="fas fa-cog"></span>
               </span>
               <h2>Camping for Kids</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nesciunt, mollitia, hic enim id culpa.</p>
@@ -161,8 +137,8 @@
         </div>
       </div>
     </div>
-    
-    
+
+
     <div class="site-section bg-info">
       <div class="container">
         <div class="row mb-5">
@@ -214,10 +190,10 @@
                 <span>$30</span>
               </span>
               <h3>Silver Pack</h3>
-              <ul class="ul-check list-unstyled teal">
-                <li>Lorem ipsum dolor sit amet</li>  
-                <li>Consectetur adipisicing elit</li>
-                <li>Nemo quis cupiditate</li>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-teal"></i> Lorem ipsum dolor sit amet</li>
+                <li><i class="fas fa-check text-teal"></i> Consectetur adipisicing elit</li>
+                <li><i class="fas fa-check text-teal"></i> Nemo quis cupiditate</li>
               </ul>
               <p><a href="#" class="btn btn-teal btn-custom-1 mt-4">Buy Now</a></p>
             </div>
@@ -228,10 +204,10 @@
                 <span>$70</span>
               </span>
               <h3>Golden Pack</h3>
-              <ul class="ul-check list-unstyled danger">
-                <li>Lorem ipsum dolor sit amet</li>  
-                <li>Consectetur adipisicing elit</li>
-                <li>Nemo quis cupiditate</li>
+              <ul class="list-unstyled danger">
+                <li><i class="fas fa-check text-danger"></i> Lorem ipsum dolor sit amet</li>
+                <li><i class="fas fa-check text-danger"></i> Consectetur adipisicing elit</li>
+                <li><i class="fas fa-check text-danger"></i> Nemo quis cupiditate</li>
               </ul>
               <p><a href="#" class="btn btn-danger btn-custom-1 mt-4">Buy Now</a></p>
             </div>
@@ -239,7 +215,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="site-section bg-light">
       <div class="container">
         <div class="row mb-5">
@@ -251,7 +227,7 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="testimonial-3-wrap">
-              
+
 
               <div class="owl-carousel nonloop-block-13">
                 <div class="testimonial-3 d-flex">
@@ -294,7 +270,7 @@
         <div class="row mt-5 justify-content-center">
 
           <div class="col-md-8">
-            
+
 
             <div class="row">
               <div class="col-lg-3 text-center">
@@ -332,7 +308,7 @@
       </div>
     </div>
 
-    
+
 
     <footer class="site-footer">
       <div class="container">
@@ -368,11 +344,11 @@
                   <li><a href="#">Privacy</a></li>
                   <li><a href="#">Contact Us</a></li>
                 </ul>
-                
+
               </div>
 
-              
-              
+
+
             </div>
           </div>
         </div>
@@ -381,7 +357,7 @@
             <div class="border-top pt-5">
               <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fas fa-heart text-danger"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             </div>
