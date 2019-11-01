@@ -1,13 +1,25 @@
 const path = require('path')
-const fs = require('fs-extra')
 const mix = require('laravel-mix')
 require('laravel-mix-versionhash')
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 mix
+  .options({
+    processCssUrls: false
+  })
+  /** Admin Panel */
   .js('resources/js/app.js', 'public/app/js')
-  .sass('resources/sass/app.scss', 'public/app/css')
-
+  .sass('resources/sass/app/app.scss', 'public/app/css')
+  /** Website */
+  .copyDirectory('resources/images', 'public/images')
+  .sass('resources/sass/site/site.scss', 'public/site/css/site.css')
+  .combine([
+    'resources/css/bootstrap-datepicker.css',
+    'resources/css/jquery.fancybox.min.css',
+    'resources/css/owl.carousel.min.css',
+    'resources/css/owl.theme.default.min.css',
+    'resources/css/aos.css'
+  ], 'public/site/css/base.css')
   .disableNotifications()
 
 if (mix.inProduction()) {
@@ -31,23 +43,6 @@ mix.webpackConfig({
   },
   output: {
     chunkFilename: 'app/js/[chunkhash].js',
-    path: mix.config.hmr ? '/' : path.resolve(__dirname, './public/build')
+    path: mix.config.hmr ? '/' : path.resolve(__dirname, './public/')
   }
 })
-
-mix.then(() => {
-  if (!mix.config.hmr) {
-    process.nextTick(() => publishAseets())
-  }
-})
-
-function publishAseets () {
-  const publicDir = path.resolve(__dirname, './public')
-
-  if (mix.inProduction()) {
-    fs.removeSync(path.join(publicDir, 'app'))
-  }
-
-  fs.copySync(path.join(publicDir, 'build', 'app'), path.join(publicDir, 'app'))
-  fs.removeSync(path.join(publicDir, 'build'))
-}
