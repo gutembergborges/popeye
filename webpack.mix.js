@@ -12,7 +12,7 @@ mix
   .sass('resources/sass/app/app.scss', 'public/app/css')
   /** Website */
   .copyDirectory('resources/images', 'public/images')
-  .sass('resources/sass/site/site.scss', 'public/site/css/site.css')
+  .sass('resources/sass/site/main.scss', 'public/site/css/main.css')
   .combine([
     'resources/css/bootstrap-datepicker.css',
     'resources/css/jquery.fancybox.min.css',
@@ -20,6 +20,22 @@ mix
     'resources/css/owl.theme.default.min.css',
     'resources/css/aos.css'
   ], 'public/site/css/base.css')
+  .combine([
+    'resources/js/site/jquery-3.3.1.min.js',
+    'resources/js/site/jquery-migrate-3.0.0.js',
+    'resources/js/site/popper.min.js',
+    'resources/js/site/bootstrap.min.js',
+    'resources/js/site/owl.carousel.min.js',
+    'resources/js/site/jquery.sticky.js',
+    'resources/js/site/jquery.waypoints.min.js',
+    'resources/js/site/jquery.animateNumber.min.js',
+    'resources/js/site/jquery.fancybox.min.js',
+    'resources/js/site/jquery.stellar.min.js',
+    'resources/js/site/jquery.easing.1.3.js',
+    'resources/js/site/bootstrap-datepicker.min.js',
+    'resources/js/site/aos.js'
+  ], 'public/site/js/base.js')
+  .js('resources/js/site/main.js', 'public/site/js/main.js')
   .disableNotifications()
 
 if (mix.inProduction()) {

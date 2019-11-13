@@ -13,7 +13,11 @@
   <link rel="stylesheet" href="{{ mix('app/css/app.css') }}">
   {{-- <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
   <link rel="stylesheet" href="{{ mix('site/css/base.css') }}">
-
   <!-- MAIN CSS -->
-  <link rel="stylesheet" href="{{ mix('site/css/site.css') }}">
+  <link rel="stylesheet" href="{{ mix('site/css/main.css') }}">
+
+  <!-- JS -->
+  <script src="{{ mix('site/js/base.js') }}"></script>
+  <!-- MAIN JS -->
+  <script async src="{{ mix('site/js/main.js') }}"></script>
 </head>
