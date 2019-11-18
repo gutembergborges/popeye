@@ -36,12 +36,12 @@
 
         <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
           <ul class="site-menu main-menu js-clone-nav mr-auto ">
-            <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="packages.html" class="nav-link">Packages</a></li>
-            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="active"><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/sobre" class="nav-link">About</a></li>
+            <li><a href="/pacotes" class="nav-link">Packages</a></li>
+            <li><a href="/galeria" class="nav-link">Gallery</a></li>
+            <li><a href="/precos" class="nav-link">Pricing</a></li>
+            <li><a href="/contato" class="nav-link">Contact</a></li>
           </ul>
         </nav>
 
