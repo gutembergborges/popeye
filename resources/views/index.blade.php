@@ -4,7 +4,7 @@
 
     <div class="site-wrap" id="home-section">
 
-      @include('components.header')
+      @include('sections.header', ['nav' => 'index'])
 
       <div class="ftco-blocks-cover-1">
 
@@ -247,7 +247,7 @@
         </div>
       </div>
 
-      @include('components.footer')
+      @include('sections.footer')
 
     </div>
 {{--

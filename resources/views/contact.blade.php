@@ -5,7 +5,7 @@
 
     <div class="site-wrap" id="home-section">
 
-    @include('components.header')
+    @include('sections.header', ['nav' => 'contact'])
 
     <div class="ftco-blocks-cover-1">
       <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')">
@@ -133,7 +133,7 @@
       </div>
     </div>
 
-    @include('components.footer')
+    @include('sections.footer')
 
     </div>
 
