@@ -14,22 +14,22 @@
 // DEPOIS COLOCAR PARA OS CONTROLLERS REDIRECIONAR
 /** Website */
 Route::get('/', function () {
-    return view('index');
+    return view('index', ['nav' => 'index']);
 });
 Route::get('sobre', function () {
-    return view('about');
+    return view('about', ['nav' => 'about']);
 });
 Route::get('contato', function () {
-    return view('contact');
+    return view('contact', ['nav' => 'contact']);
 });
 Route::get('galeria', function () {
-    return view('gallery');
+    return view('gallery', ['nav' => 'gallery']);
 });
 Route::get('pacotes', function () {
-    return view('packages');
+    return view('packages', ['nav' => 'packages']);
 });
 Route::get('precos', function () {
-    return view('pricing');
+    return view('pricing', ['nav' => 'pricing']);
 });
 
 /** Admin Panel */
