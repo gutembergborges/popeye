@@ -1,4 +1,5 @@
 @section('header')
+
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close mt-3">
@@ -55,4 +56,5 @@
     </div>
 
   </header>
+
 @show
